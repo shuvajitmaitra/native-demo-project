@@ -7,7 +7,7 @@ export default function Index() {
    <>
    <Stack.Screen options={{headerShown: true, title: "Profile"}} />
    <View style={styles.container}>
-      <Text>Index profile Tab</Text>
+      <Text  style={{fontSize: 20, fontWeight: "bold"}}>Index profile Tab</Text>
       <StatusBar style="auto" />
     </View>
    </>
