@@ -56,6 +56,7 @@ export default function _layout() {
           (pathname == "/home" && "Home") ||
           (pathname == "/profile" && "Profile") ||
           (pathname == "/contact" && "Contact"),
+          drawerLabelStyle: {backgroundColor: "red"},
       }}
       drawerContent={(props) => <CustomDrawerContent {...props} />}
     >

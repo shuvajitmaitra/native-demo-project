@@ -3,13 +3,11 @@ import { Tabs } from "expo-router";
 import { AntDesign } from "@expo/vector-icons";
 import { FontAwesome } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
-import { DrawerToggleButton } from "@react-navigation/drawer";
-
 export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
-        headerShown: false,
+        headerShown: true,
         tabBarActiveTintColor: "black",
         tabBarActiveBackgroundColor: "gray",
       }}
