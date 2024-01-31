@@ -12,7 +12,6 @@ export default function TabLayout() {
         headerShown: false,
         tabBarActiveTintColor: "black",
         tabBarActiveBackgroundColor: "gray",
-        headerRight: () => <DrawerToggleButton />,
       }}
     >
       <Tabs.Screen
