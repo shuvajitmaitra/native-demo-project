@@ -9,7 +9,7 @@ export default function Index() {
       <Stack.Screen
         options={{
           headerShown: true,
-          title: "Login",
+          title: "Sign Up",
           headerTitleAlign: "center",
           statusBarColor: "#D8E5D9",
           headerStyle: {
@@ -27,9 +27,37 @@ export default function Index() {
               paddingVertical: 30,
             }}
           >
-            Let's Login
+            Create an new account
           </Text>
           <View styles={{ padding: 10 }}>
+            <Text style={{ marginHorizontal: 20, marginVertical: 5 }}>
+              Full Name
+            </Text>
+            <TextInput
+              style={{
+                alignContent: "center",
+                flexDirection: "row",
+                backgroundColor: "#f7d9c4",
+                padding: 4,
+                marginHorizontal: 20,
+                borderRadius: 10,
+              }}
+              placeholder="Full Name"
+            ></TextInput>
+            <Text style={{ marginHorizontal: 20, marginVertical: 5 }}>
+              Image URL
+            </Text>
+            <TextInput
+              style={{
+                alignContent: "center",
+                flexDirection: "row",
+                backgroundColor: "#f7d9c4",
+                padding: 4,
+                marginHorizontal: 20,
+                borderRadius: 10,
+              }}
+              placeholder="Photo URL"
+            ></TextInput>
             <Text style={{ marginHorizontal: 20, marginVertical: 5 }}>
               User Name
             </Text>
@@ -75,7 +103,7 @@ export default function Index() {
                 fontWeight: "bold"
               }}
             >
-              Login
+              Sign Up
             </Text>
           </TouchableOpacity>
         </View>

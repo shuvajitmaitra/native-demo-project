@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
   },
   loginDiv: {
     backgroundColor: "#fff",
-    height: 500,
+    height: 400,
     width: "100%",
     borderRadius: 20,
     padding: 20,

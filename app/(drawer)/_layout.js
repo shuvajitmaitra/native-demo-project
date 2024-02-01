@@ -46,7 +46,7 @@ const CustomDrawerContent = (props) => {
       />
       <DrawerItem
         icon={(color, size) => (
-          <AntDesign name="login" size={24} color={pathname ==='/profile' ? "white" : "black"}/>
+          <AntDesign name="login" size={24} color={pathname ==='/login' ? "white" : "black"}/>
         )}
         label={"Login"}
         labelStyle={{color: pathname ==='/login' ? "white" : "black"}}
@@ -57,14 +57,14 @@ const CustomDrawerContent = (props) => {
       />
       <DrawerItem
         icon={(color, size) => (
-          <AntDesign name="login" size={24} color={pathname ==='/profile' ? "white" : "black"}/>
+          <AntDesign name="pushpino" size={24} color={pathname ==='/register' ? "white" : "black"}/>
         )}
-        label={"Login"}
-        labelStyle={{color: pathname ==='/login' ? "white" : "black"}}
+        label={"Sign Up"}
+        labelStyle={{color: pathname ==='/register' ? "white" : "black"}}
         onPress={() => {
-          router.push("/login");
+          router.push("/register");
         }}
-        style={{backgroundColor: pathname ==='/login' ? "black" : "white"}}
+        style={{backgroundColor: pathname ==='/register' ? "black" : "white"}}
       />
     </DrawerContentScrollView>
   );
