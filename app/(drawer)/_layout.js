@@ -15,7 +15,7 @@ const CustomDrawerContent = (props) => {
         icon={(color, size) => (
           <AntDesign name="home" size={24} color={pathname ==='/home' ? "white" : "black"} />
         )}
-        label={"home"}
+        label={"Home"}
         labelStyle={{color: pathname ==='/home' ? "white" : "black"}}
         onPress={() => {
           router.push("/(drawer)/(tabs)/home");
@@ -44,6 +44,28 @@ const CustomDrawerContent = (props) => {
         }}
         style={{backgroundColor: pathname ==='/profile' ? "black" : "white"}}
       />
+      <DrawerItem
+        icon={(color, size) => (
+          <AntDesign name="login" size={24} color={pathname ==='/profile' ? "white" : "black"}/>
+        )}
+        label={"Login"}
+        labelStyle={{color: pathname ==='/login' ? "white" : "black"}}
+        onPress={() => {
+          router.push("/login");
+        }}
+        style={{backgroundColor: pathname ==='/login' ? "black" : "white"}}
+      />
+      <DrawerItem
+        icon={(color, size) => (
+          <AntDesign name="login" size={24} color={pathname ==='/profile' ? "white" : "black"}/>
+        )}
+        label={"Login"}
+        labelStyle={{color: pathname ==='/login' ? "white" : "black"}}
+        onPress={() => {
+          router.push("/login");
+        }}
+        style={{backgroundColor: pathname ==='/login' ? "black" : "white"}}
+      />
     </DrawerContentScrollView>
   );
 };
@@ -56,7 +78,7 @@ export default function _layout() {
           (pathname == "/home" && "Home") ||
           (pathname == "/profile" && "Profile") ||
           (pathname == "/contact" && "Contact"),
-          drawerLabelStyle: {backgroundColor: "red"},
+          headerTitleAlign: 'center',
       }}
       drawerContent={(props) => <CustomDrawerContent {...props} />}
     >

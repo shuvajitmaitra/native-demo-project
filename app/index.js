@@ -4,7 +4,7 @@ export default function Index() {
   return (
  
 
-    <Redirect href="/(drawer)/(tabs)/home" />
+    <Redirect href="/(drawer)/login" />
 
   )
 }

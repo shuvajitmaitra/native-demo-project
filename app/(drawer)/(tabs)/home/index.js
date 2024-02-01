@@ -5,7 +5,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function Index() {
   return (
    <>
-   <Stack.Screen options={{ headerShown: false, title: "Home" }} />
+   <Stack.Screen options={{ headerShown: false, title: "Home",  headerTitleAlign: 'center',}} />
     <View style={styles.container}>
       <Text  style={{fontSize: 20, fontWeight: "bold"}}>Index home Tab</Text>
       <StatusBar style="auto" />
